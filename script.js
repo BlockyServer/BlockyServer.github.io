@@ -1,4 +1,4 @@
-const ip = 'mc.td2dr.xyz';
+const ip = 'blockgame394.feathermc.gg';
 const res = await fetch(`https://api.mcsrvstat.us/2/${ip}?t=${Date.now()}`);
 const data = await res.json();
 // ignore the crap code xd
