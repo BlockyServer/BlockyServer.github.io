@@ -1,4 +1,5 @@
-const ip = 'mc.td2dr.xyz';
+const ip = 'blockgame394.feathermc.gg';
+const cIP = 'mc.td2dr.xyz';
 const res = await fetch(`https://api.mcsrvstat.us/2/${ip}?t=${Date.now()}`);
 const data = await res.json();
 // ignore the crap code xd
@@ -13,8 +14,8 @@ const rBtn = document.getElementById('refresh');
 const yr = document.getElementById('yr');
 
 yr.textContent = new Date().getFullYear();
-ipTxt.textContent = ip;
-playBtn.href = `minecraft://?addExternalServer=${encodeURIComponent(ip)}`;
+ipTxt.textContent = cIP;
+playBtn.href = `minecraft://?addExternalServer=${encodeURIComponent(cIP)}`;
 
 function upd(d){
   if(!d || !d.online){
