@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlockyServer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-accents">
+    <div class="glow"></div>
+    <div class="shapes">
+      <div class="cube c1"></div>
+      <div class="cube c2"></div>
+      <div class="cube c3"></div>
+      <div class="cube c4"></div>
+      <div class="cube c5"></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">B</div>
+      <div class="txt">
+        <div class="title">Blocky Server</div>
+        <div class="meta">by pck</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#play" class="btn">Play</a>
+      <a href="#features" class="link">Features</a>
+      <a href="#contact" class="link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">Blocky Server</h1>
+        <p class="hero-sub">Simple vanilla survival with almost 0 plugins.</p>
+        <div class="actions">
+          <a id="playBtn" class="cta" href="#play">Join: <span id="ipTxt">mc.td2dr.xyz</span></a>
+          <button id="refresh" class="muted">Refresh status</button>
+        </div>
+        <ul class="feature-list">
+          <li>1.21.10 compatibility</li>
+          <li>Home and TPA plugins</li>
+          <li>Open every day</li>
+        </ul>
+      </div>
+
+      <aside class="server-card" id="serverCard" aria-live="polite">
+        <div class="card-top">
+          <div class="card-title">Server Status</div>
+          <div class="status-pill" id="st">Checking...</div>
+        </div>
+        <div class="card-body">
+          <div class="stat">
+            <div class="num" id="pl">—</div>
+            <div class="lbl">Players online</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="max">—</div>
+            <div class="lbl">Max players</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="ver">—</div>
+            <div class="lbl">Version</div>
+          </div>
+        </div>
+        <div class="card-foot" id="motd">—</div>
+      </aside>
+    </section>
+
+    <section id="features" class="panels">
+      <div class="panel">
+        <h3>Smooth Performance</h3>
+        <p>Paper server for optimization.</p>
+      </div>
+      <div class="panel">
+        <h3>Have fun</h3>
+        <p>Make tons of friends and team up!</p>
+      </div>
+      <div class="panel">
+        <h3>Brand new.</h3>
+        <p>The server is brand new and you can join and quickly catch up with others.</p>
+      </div>
+    </section>
+
+    <footer id="contact" class="foot">
+      <div>© <span id="yr"></span> BlockyServer — made by pck</div>
+      <div class="socials">
+        <a class="link" href="https://discord.gg/puNGNk4qAg">Discord</a>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
